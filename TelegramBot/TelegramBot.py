@@ -10,6 +10,9 @@ for name, _id in person_id.items():    id_person[_id] = name
 
 bot = telebot.TeleBot('6213643172:AAEQRvpNShPsImla-2fSRCBkkMLzlh7Y80I')
 
+
+
+
 # create a table in a datebase
 conn = sqlite3.connect('reminders.db')
 conn.execute('''CREATE TABLE IF NOT EXISTS reminders (
