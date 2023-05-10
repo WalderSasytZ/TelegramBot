@@ -4,12 +4,11 @@ import datetime
 import time
 import threading
 
-person_id = { "мак": 769231781, "?нина": 779020072, "папа": 1653991970, "егас": 632578036 , "герман": 1798118387, "я": 1082479755 }
+person_id = {}
 id_person = {}
 for name, _id in person_id.items():    id_person[_id] = name
 
 bot = telebot.TeleBot('6213643172:AAEQRvpNShPsImla-2fSRCBkkMLzlh7Y80I')
-
 
 # create a table in a datebase
 conn = sqlite3.connect('reminders.db')
